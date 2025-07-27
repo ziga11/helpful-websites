@@ -1,0 +1,152 @@
+:root {
+	font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+	font-weight: 400;
+
+	background-color: #262626;
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.sections {
+	max-width: 80vw;
+	max-height: 100%;
+}
+
+a {
+	font-weight: 500;
+	color: #646cff;
+	text-decoration: inherit;
+}
+
+a:hover {
+	color: #535bf2;
+}
+
+body {
+	margin: 0;
+	display: flex;
+	place-items: center;
+	justify-content: center;
+	min-width: 320px;
+	min-height: 100vh;
+}
+
+h3 {
+	margin-top: 0;
+}
+
+.section-element {
+	display: grid;
+	grid-template-rows: auto auto;
+	max-width: 100px;
+	align-content: center;
+	justify-content: center;
+	text-align: center;
+	cursor: pointer;
+}
+
+section {
+	align-self: center;
+	display: grid;
+	width: 75vw;
+	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+	gap: 20px;
+	padding: 15px;
+	background-color: #505050;
+	border-radius: 15px;
+}
+
+section img {
+	padding-bottom: 10px;
+}
+
+h1 {
+	font-size: 3.2em;
+	line-height: 1.1;
+}
+
+#add-element {
+	position: absolute;
+	right: 3vw;
+	top: 5vh;
+	background-color: #1878ED;
+}
+
+#add-element:hover {
+	background-color: #0BA4F0;
+}
+
+#close-add-element-modal {
+	position: absolute;
+	right: 5%;
+	top: 5%;
+	cursor: pointer;
+}
+
+.modal-buttons {
+	margin-top: 2vh;
+	justify-content: space-evenly;
+	display: flex;
+}
+
+input {
+	height: 20px;
+	border-radius: 8px;
+	margin: 8px;
+}
+
+.input-div input:focus {
+	border-color: #1878ED;
+	outline: none;
+	box-shadow: 0 0 0 2px #1878ED;
+}
+
+.input-div {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.input-div label {
+	width: 50px;
+}
+
+.add-element-modal {
+	display: none;
+	position: absolute;
+	padding: 25px 15px;
+	border-radius: 10px;
+	z-index: 9999;
+	margin: auto;
+	background-color: #353535;
+	/* 	display: grid; */
+}
+
+#add-element-submit {
+	text-align: center;
+	background-color: #1878ED;
+}
+
+#add-element-close {
+	background-color: red;
+}
+
+button {
+	border-radius: 8px;
+	border: 1px solid transparent;
+	padding: 0.6em 1.2em;
+	font-size: 1em;
+	font-weight: 500;
+	font-family: inherit;
+	cursor: pointer;
+	transition: border-color 0.25s;
+}
+
+button:focus,
+button:focus-visible {
+	outline: 4px auto -webkit-focus-ring-color;
+}

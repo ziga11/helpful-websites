@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<!-- 	<link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Websites</title>
+</head>
+
+<body>
+	<button type="button" id="add-element">Add Element</button>
+	<div class="sections"></div>
+
+	<div class="add-element-modal">
+		<div id="close-add-element-modal">
+			<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-x"
+				viewBox="0 0 16 16">
+				<path
+					d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+			</svg>
+		</div>
+		<h3>Add Element</h3>
+		<div class="input-div">
+			<label for="add-element-title">Title: </label>
+			<input type="text" placeholder="title" id="add-element-title"></input>
+		</div>
+		<div class="input-div">
+			<label for="add-element-type">Type: </label>
+			<input type="text" placeholder="type" id="add-element-type"></input>
+		</div>
+		<div class="input-div">
+			<label for="add-element-url">Url: </label>
+			<input type="text" placeholder="url" id="add-element-url"></input>
+		</div>
+		<div class="modal-buttons">
+			<button type="submit" id="add-element-close">Close</button>
+			<button type="submit" id="add-element-submit">Submit</button>
+		</div>
+	</div>
+
+	<script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
