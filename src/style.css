@@ -14,6 +14,7 @@
 .sections {
 	max-width: 80vw;
 	max-height: 100%;
+	padding: 4vh 0;
 }
 
 a {
@@ -41,23 +42,32 @@ h3 {
 
 .section-element {
 	display: grid;
-	grid-template-rows: auto auto;
+	place-items: center;
+	/* shorthand for align-items + justify-items */
 	max-width: 100px;
-	align-content: center;
-	justify-content: center;
+	min-width: 75px;
 	text-align: center;
 	cursor: pointer;
+	position: relative;
 }
+
 
 section {
 	align-self: center;
-	display: grid;
+	display: flex;
+	justify-content: flex-start;
 	width: 75vw;
-	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-	gap: 20px;
+	height: 105px;
+	gap: 3vw;
 	padding: 15px;
+	margin-bottom: 5vh;
 	background-color: #505050;
 	border-radius: 15px;
+	overflow-x: auto;
+	overflow-y: hidden;
+	white-space: nowrap;
+	scrollbar-width: thin;
+	scrollbar-color: #333333 transparent;
 }
 
 section img {
@@ -117,13 +127,15 @@ input {
 
 .add-element-modal {
 	display: none;
-	position: absolute;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
 	padding: 25px 15px;
 	border-radius: 10px;
 	z-index: 9999;
 	margin: auto;
 	background-color: #353535;
-	/* 	display: grid; */
 }
 
 #add-element-submit {

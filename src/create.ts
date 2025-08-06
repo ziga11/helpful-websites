@@ -33,7 +33,8 @@ export function createElement(website: Website): HTMLAnchorElement {
 	deleteSvg.style.cursor = "pointer";
 	deleteSvg.style.position = "absolute";
 	deleteSvg.style.zIndex = "3000";
-	deleteSvg.style.translate = "65px -10px";
+	deleteSvg.style.top = "-15px";
+	deleteSvg.style.right = "-10px";
 
 	deleteSvg.addEventListener("mouseenter", () => {
 		const svg = deleteSvg.querySelector("svg");
